@@ -11,4 +11,9 @@ public class MainController {
     public String index2(){
         return "index2";
     }
+
+    @GetMapping("/")
+    public String root(){
+        return "redirect:/question/list";
+    }
 }
